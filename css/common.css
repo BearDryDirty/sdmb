@@ -92,7 +92,7 @@ input:-ms-placeholder{color: #ccc}
 .ind-mes-tabtit .on{color: #b7282d; background: url(../images/mes-line1.png) bottom center no-repeat}
 .news-list{width: 100%; height: 122px; border-bottom: 1px dashed #ccc;display: block; float: left;}
 .news-list img{width: 168px; height: 110px; display: block; float: left; margin: 6px 20px 0 0}
-.news-list .news-tit{height: 60px; line-height: 30px;font-size: 16px; color: #1f1f1f; width: 100%; display: table-cell; padding: 10px 0 10px 0;}
+.news-list .news-tit{height: 60px; line-height: 30px;font-size: 16px; color: #1f1f1f; width: 100%; display: table-cell; padding: 10px 0 10px 0; overflow: hidden;}
 .news-list .news-tools{color: #666; width: 100%;}
 
 .h1{font-size: 38px ;color: #1f1f1f;width: 100%; text-align: center; height: 50px; line-height: 50px; margin-bottom: 20px}
@@ -132,3 +132,10 @@ input:-ms-placeholder{color: #ccc}
 .bottom-nav a:hover{text-decoration: underline;}
 .bottom-nav span{color: #666; margin-left: 10px; text-align: left; text-indent: 0}
 .qr{text-align: center; color: #666}
+
+.news-l a{margin-bottom: 20px}
+.news-r{width: 970px; float: right;}
+.news-r .ind-mes-box{height: auto}
+.page{width: 100%; height: 32px; float: right; text-align: right;}
+.page a,.page span{border: 1px solid #d7d7d7; color: #797979; height: 32px; padding: 0 8px; display: inline-block; line-height: 32px}
+.page a:hover{color: #2d2d2d; background: #d7d7d7}
