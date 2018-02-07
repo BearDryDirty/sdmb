@@ -121,6 +121,7 @@ input:-ms-placeholder{color: #ccc}
 .bgcolor7{background: #37b946;}
 .bgcolor8{background: #09beb3;}
 .bg-black{background: #000;}
+.bg-white{background: #fff; overflow: hidden; margin:40px auto 80px auto;}
 .bg-dark{background: #494949}
 .link{width: 100%}
 .link a{display: block; float: left; color: #2d2d2d; margin-right: 20px}
@@ -139,3 +140,41 @@ input:-ms-placeholder{color: #ccc}
 .page{width: 100%; height: 32px; float: right; text-align: right;}
 .page a,.page span{border: 1px solid #d7d7d7; color: #797979; height: 32px; padding: 0 8px; display: inline-block; line-height: 32px}
 .page a:hover{color: #2d2d2d; background: #d7d7d7}
+
+.course-bg{background: url(../images/course-bg.jpg) center no-repeat; background-size: cover; overflow: hidden;}
+.course-box dl {height: 308px; display: block;float: left; margin-bottom: 30px}
+.course-box dl dt{color: #b7282d; font-size: 28px; margin-bottom: 30px}
+.course-box dl dd{color: #4c4d4d; line-height: 30px}
+.course-box span{width: 326px; height: 308px;display: block;}
+.course-1 span{margin-right: 90px}
+.course-1 dt{margin-top: 90px; margin-left: 90px; width: 50%}
+.course-1 dd{margin-left: 90px; width: 50%}
+.course-2 span{margin-left: 90px}
+.course-2 dt{margin-top: 60px; margin-left: 90px; float: left; width: 55%}
+.course-2 dd{margin-left: 90px;float: left; width: 55% }
+.course-3 span{margin-left: 90px}
+.course-3 dt{margin-top: 90px; margin-left: 90px; float: left; width: 55%}
+.course-3 dd{margin-left: 90px;float: left; width: 55% }
+
+.teacher-l{width: 160px; height: auto; border: 1px solid #ccc; background: #f4f4f4; text-align: center}
+.teacher-l dt{height: 55px; line-height: 55px; font-size: 18px; color: #333; border-bottom: 1px solid #ccc}
+.teacher-l dt img{margin-right: 10px}
+.teacher-l a{height: 55px; line-height: 55px; display: block; border-bottom: 1px solid #ccc}
+.teacher-l a:hover{color: #b7282d}
+.teacher-l .on{color: #b7282d}
+.teacher-l a:last-child{border: none}
+.teacher-r{width: 1000px; float: right;}
+.teacher-r-tit{width: 100%; height: 40px;line-height: 40px; font-size: 16px; margin-bottom: 20px}
+.teacher-r-tit i{width: 5px; height: 20px; float: left;display: block; margin: 10px 10px 0 0; background: #b7282d}
+.teacher-pic a{width: 212px; height: 230px; display: block; float: left; position: relative; overflow: hidden; margin: 0 50px 50px 0}
+.teacher-pic a:nth-of-type(4n){margin-right: 0}
+.teacher-pic a img{width: 100%; height: 100%;transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s}
+.teacher-pic a span{position: absolute; bottom: 0; left: 0;z-index: 2;width: 100%; height: 40px; line-height: 40px; background: rgba(0,0,0,.8); text-align: center; color: #fff}
+.teacher-video a{width: 286px; height: 276px; display: block; float: left; position: relative; overflow: hidden; margin: 0 70px 50px 0}
+.teacher-video a img{width: 286px; height: 236px}
+.teacher-video a:nth-of-type(3n){margin-right: 0}
+.teacher-video a i{width: 286px; height: 236px; position: absolute; top: -236px; left: 0; z-index: 2; background: url(../images/icon-video.png);transition:all .3s; -moz-transition:all .3s; -ms-transition:all .3s; -o-transition:all .3s; -webkit-transition:all .3s}
+.teacher-video a span{width: 100%; height: 40px; line-height: 40px;  text-align: center; color: #010101; display: block;}
+.teacher-pic a:hover img{transform: scale(1.1);}
+.teacher-video a:hover i{top: 0}
+.teacher-video a:hover span{color: #b7282d}

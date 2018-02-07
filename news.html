@@ -9,7 +9,6 @@
 <meta name="description" content="" />
 <link href="css/common.css" rel="stylesheet">
 <link href="css/swiper.min.css" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/hover-effects.css">
 </head>
 <body>
 	<div class="wrap top40"></div>
@@ -17,11 +16,11 @@
 		<div class="center-lg relative">
 			<a class="logo" href=""></a>
 			<p class="nav">
-				<a href=""><i></i>首页</a>
+				<a href="index.html"><i></i>首页</a>
 				<a href=""><i></i>关于我们</a>
-				<a href=""><i></i>品牌课程</a>
-				<a href=""><i></i>名师风采</a>
-				<a class="on" href=""><i></i>新闻动态</a>
+				<a href="course.html"><i></i>品牌课程</a>
+				<a href="teacher.html"><i></i>名师风采</a>
+				<a class="on" href="news.html"><i></i>新闻动态</a>
 				<a href=""><i></i>人才招聘</a>
 				<a href=""><i></i>校区信息</a>
 			</p>
@@ -37,7 +36,7 @@
 		<!-- <div class="banner-wen"></div> -->
 		<div class="swiper-container">
 	        <div class="swiper-wrapper">
-	            <a class="swiper-slide" href="" style="background:url(images/news-banner.jpg) center center"></a>
+	            <a class="swiper-slide" href="" target="_blank" style="background:url(images/news-banner.jpg) center center"></a>
 	        </div>
 	        <!-- Add Pagination -->
 	        <!-- <div class="swiper-pagination"></div> -->
@@ -47,9 +46,9 @@
 		<div class="center">
 			<div class="ind-mes-l news-l fl">
 				<p class="ind-mes-tit"><i></i>最新活动</p>
-				<a class="ind-mes-box" href=""><img src="images/ind-mes1.jpg" class="img"></a>
-				<a class="ind-mes-box" href=""><img src="images/act1.jpg" class="img"></a>
-				<a class="ind-mes-box" href=""><img src="images/act2.jpg" class="img"></a>
+				<a class="ind-mes-box" data-scroll-reveal="enter top" href=""><img src="images/ind-mes1.jpg" class="img"></a>
+				<a class="ind-mes-box" data-scroll-reveal="enter top" href=""><img src="images/act1.jpg" class="img"></a>
+				<a class="ind-mes-box" data-scroll-reveal="enter top" href=""><img src="images/act2.jpg" class="img"></a>
 			</div>
 			<div class="news-r">
 				<div class="ind-mes-tabtit">
@@ -179,20 +178,11 @@
 
 </body>
 <script src="js/jquery-1.8.0.min.js"></script>
+<script src="js/scrollReveal.js"></script>
 <script>
-	$(function(){
-		$(".ind-mes-tabtit span").click(function(){
-			var _ind = $(this).index();
-			$(".ind-mes-tabtit span").removeClass("on");
-			$(this).addClass("on");
-			$(".ind-mes-tabmain").addClass("none");
-			$(".ind-mes-tabmain").eq(_ind).removeClass("none")
-		})
-		$(".ind-mes-r dd").mousemove(function(){
-			$(".ind-mes-r dd").removeClass("on")
-			$(this).addClass("on")
-		})
-	})
+(function(){
+	window.scrollReveal = new scrollReveal({ reset: true, move: '50px'});
+})();
 </script>
 <!-- <script src="js/swiper.min.js"></script>
 <script>
